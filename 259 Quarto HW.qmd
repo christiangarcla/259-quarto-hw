@@ -99,7 +99,7 @@ Visualize the distribution of precision to see if there are values above 2.5.
 ds %>% ggplot(aes(x = precision)) + geom_histogram() + geom_vline(xintercept = 2.5)
 ```
 
-Create a summary to figure out which participants would we need to exclude if > 2.5 meant the data are unuseable?
+Create a summary to figure out which participants would we need to exclude if \> 2.5 meant the data are unuseable?
 
 ```{r}
 ds %>% group_by(id, age_group) %>%
